@@ -35,4 +35,12 @@ public class Eco extends Actor
             setLocation(getX(), getY() + 2);
         }
     }
+    //remove the trash
+    public void collect()
+    {
+        if(isTouching(Trash.class))
+        {
+            
+        }
+    }
 }

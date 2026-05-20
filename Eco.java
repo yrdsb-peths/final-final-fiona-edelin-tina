@@ -15,5 +15,8 @@ public class Eco extends Actor
     public void act()
     {
         // Add your action code here.
+        GreenfootImage image = getImage();
+        image.scale(10, 10);
+        setImage(image);
     }
 }

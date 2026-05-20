@@ -3,6 +3,7 @@ import greenfoot.*;
 public class MyWorld extends World {
     public MyWorld() {
         super(600, 400, 1);
+        setBackground("road.jpg");
         Eco us = new Eco();
         addObject(us, 300, 350);
         createTrash();

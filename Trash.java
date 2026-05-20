@@ -15,7 +15,7 @@ public class Trash extends Actor
     public Trash()
     {
         GreenfootImage image = new GreenfootImage("trash.png");
-        image.scale(50, 50);
+        image.scale(35, 40);
         setImage(image);
     }
     public void act()

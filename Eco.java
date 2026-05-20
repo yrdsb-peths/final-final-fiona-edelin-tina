@@ -15,9 +15,11 @@ public class Eco extends Actor
     public void act()
     {
         // Add your action code here.
+        setImage("person.png");
         GreenfootImage image = getImage();
-        image.scale(50, 50);
+        image.scale(50, 65);
         setImage(image);
+        collect();
         if(Greenfoot.isKeyDown("left"))
         {
             move(-2);
@@ -40,7 +42,9 @@ public class Eco extends Actor
     {
         if(isTouching(Trash.class))
         {
-            
+            removeTouching(Trash.class);
+            MyWorld world = (MyWorld)getWorld();
+            world.createTrash();
         }
     }
 }

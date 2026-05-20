@@ -16,7 +16,15 @@ public class Eco extends Actor
     {
         // Add your action code here.
         GreenfootImage image = getImage();
-        image.scale(10, 10);
+        image.scale(50, 50);
         setImage(image);
+        if(Greenfoot.isKeyDown("left"))
+        {
+            move(-2);
+        }
+        else if(Greenfoot.isKeyDown("right"))
+        {
+            move(2);
+        }
     }
 }

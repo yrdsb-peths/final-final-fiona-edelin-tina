@@ -45,6 +45,7 @@ public class Eco extends Actor
             removeTouching(Trash.class);
             MyWorld world = (MyWorld)getWorld();
             world.createTrash();
+            world.increaseScore();
         }
     }
 }

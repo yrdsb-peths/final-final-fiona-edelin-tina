@@ -12,8 +12,8 @@ public class MyWorld extends World {
         addObject(us, 300, 350);
         
         // Create a label
-        scoreLabel = new Label(0, 80);
-        addObject(scoreLabel, 50, 50);
+        scoreLabel = new Label(0, 60);
+        addObject(scoreLabel, 40, 50);
         
         createTrash();
     }

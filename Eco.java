@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Eco here.
+ * Eco, our hero.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Fiona, Edelin, Tina 
+ * @version May 2026
  */
 public class Eco extends Actor
 {

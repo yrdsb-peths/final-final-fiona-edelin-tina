@@ -1,5 +1,11 @@
 import greenfoot.*;
 
+/**
+ * The World our hero lives in.
+ * 
+ * @author Fiona, Edelin, Tina
+ * @version May 2026
+ */
 public class MyWorld extends World {
     public int score = 0;
     Label scoreLabel;
@@ -36,6 +42,9 @@ public class MyWorld extends World {
         scoreLabel.setValue(score);
     }
     
+    /**
+     * Create trash at random locations at top and bottom of screen
+     */
     public void createTrash()
     {
         Trash litter = new Trash();

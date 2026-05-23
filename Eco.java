@@ -15,7 +15,7 @@ public class Eco extends Actor
     GreenfootImage[] front = new GreenfootImage[3];
     GreenfootImage[] back = new GreenfootImage[2];
     GreenfootImage[] right = new GreenfootImage[3];
-    GreenfootImage[] left = new GreenfootImage[4];
+    GreenfootImage[] left = new GreenfootImage[3];
     GreenfootImage[] clean = new GreenfootImage[2];
     String facing = "front";
     SimpleTimer animationTimer = new SimpleTimer();
@@ -23,6 +23,7 @@ public class Eco extends Actor
     
     boolean cleaning = false;
     boolean moving = false;
+    int cleanCount = 0;
     public Eco()
     {
         for(int i = 0; i < front.length; i++)
@@ -134,14 +135,20 @@ public class Eco extends Actor
         if(facing.equals("clean"))
         {
             setImage(clean[imageIndex % clean.length]);
-            imageIndex++;
-            
-            if(imageIndex >= clean.length)
+            cleanCount++;
+            if(cleanCount % 10 == 0)
+            {
+                imageIndex++;
+            }
+            if(cleanCount >= 4)
             {
                 cleaning = false;
                 facing = "front";
+                
                 imageIndex = 0;
+                cleanCount = 0;
             }
+            return;
         }
     }
 }

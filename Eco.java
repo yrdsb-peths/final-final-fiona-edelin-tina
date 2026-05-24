@@ -54,6 +54,7 @@ public class Eco extends Actor
         setImage(front[0]);
         animationTimer.mark();
     }
+    GreenfootSound ecoSound = new GreenfootSound("garbage.mp3");
     public void act()
     {
         // Add your action code here.
@@ -94,6 +95,7 @@ public class Eco extends Actor
             MyWorld world = (MyWorld)getWorld();
             world.createTrash();
             world.increaseScore();
+            ecoSound.play();
             
             facing = "clean";
             cleaning = true;

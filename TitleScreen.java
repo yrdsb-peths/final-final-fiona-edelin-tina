@@ -85,5 +85,22 @@ public class TitleScreen extends World
         label5.setLocation(281,281);
         label5.setLocation(86,308);
         label5.setLocation(78,308);
+        Trash trash = new Trash();
+        addObject(trash,384,297);
+        Trash trash2 = new Trash();
+        addObject(trash2,440,278);
+        Trash trash3 = new Trash();
+        addObject(trash3,401,362);
+        Trash trash4 = new Trash();
+        addObject(trash4,403,232);
+        trash4.setLocation(260,356);
+        trash.setLocation(357,275);
+        trash2.setLocation(470,349);
+        trash3.setLocation(317,305);
+        trash.setLocation(348,364);
+        trash3.setLocation(367,272);
+        Trash trash5 = new Trash();
+        addObject(trash5,446,280);
+        trash5.setLocation(470,274);
     }
 }

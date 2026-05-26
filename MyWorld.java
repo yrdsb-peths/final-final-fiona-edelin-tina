@@ -9,6 +9,7 @@ import greenfoot.*;
 public class MyWorld extends World {
     public int score = 0;
     Label scoreLabel;
+    int carTimer = 0;
     public MyWorld() {
         super(600, 400, 1);
         setBackground("road.jpg");
@@ -24,6 +25,51 @@ public class MyWorld extends World {
         createTrash();
     }
     
+    public void act()
+    {
+        spawnCars();
+    }
+    
+    public void spawnCars()
+    {
+        carTimer++;
+        if(carTimer >= 80)
+        {
+            carTimer = 0;
+            int amount = Greenfoot.getRandomNumber(3) + 1;
+            
+            int lane1 = 65;
+            int lane2 = 135;
+            
+            if(amount == 1)
+            {
+                return;
+            }
+            if(amount == 2)
+            {
+                int lane = Greenfoot.getRandomNumber(2);
+
+                Cars car = new Cars(0);
+
+                if(lane == 0)
+                {
+                    addObject(car, 650, lane1);
+                }
+                else
+                {
+                    addObject(car, 650, lane2);
+                }
+            }
+            if(amount == 3)
+            {
+                Cars car1 = new Cars(0);
+                Cars car2 = new Cars(0);
+
+                addObject(car1, 650, lane1);
+                addObject(car2, 650, lane2);
+            }
+        }
+    }
     /**
      * End the game and draw 'GameOver'
      */

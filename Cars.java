@@ -17,7 +17,7 @@ public class Cars extends Actor
     public Cars(int direction)
     {
         // random speed 
-        speed = Greenfoot.getRandomNumber(4);
+        speed = Greenfoot.getRandomNumber(4) + 2;
         if(direction == 0)
         {
             // so the cars like move left yk
@@ -29,7 +29,7 @@ public class Cars extends Actor
         // Add your action code here.
         setLocation(getX() + speed, getY());
         //so this is if the car runs of the screen we dont want it to keep running 
-        if(getX() < -50 || getX() > 650)
+        if(getX() < -10)
         {
             getWorld().removeObject(this);
         }

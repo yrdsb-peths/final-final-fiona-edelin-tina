@@ -29,7 +29,7 @@ public class Cars extends Actor
         // Add your action code here.
         setLocation(getX() + speed, getY());
         //so this is if the car runs of the screen we dont want it to keep running 
-        if(getX() < -10)
+        if(getX() < -80)
         {
             getWorld().removeObject(this);
         }

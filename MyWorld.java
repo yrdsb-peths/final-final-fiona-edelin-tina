@@ -33,7 +33,7 @@ public class MyWorld extends World {
     public void spawnCars()
     {
         carTimer++;
-        if(carTimer >= 80)
+        if(carTimer >= 100)
         {
             carTimer = 0;
             int amount = Greenfoot.getRandomNumber(3) + 1;

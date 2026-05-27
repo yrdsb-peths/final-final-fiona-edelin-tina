@@ -14,6 +14,7 @@ public class Cars extends Actor
      */
     //for the cars varrying speed
     int speed; 
+    private GreenfootImage[] carImage = new GreenfootImage[14];
     public Cars(int direction)
     {
         // random speed 
@@ -23,6 +24,13 @@ public class Cars extends Actor
             // so the cars like move left yk
             speed = - speed;
         }
+        for(int i = 0; i < carImage.length; i++)
+        {
+            carImage[i] = new GreenfootImage("car/car" + i + ".png");
+            carImage[i].scale(80,40);
+        }
+        int randomImage = Greenfoot.getRandomNumber(carImage.length);
+        setImage(carImage[randomImage]);
     }
     public void act()
     {

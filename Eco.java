@@ -13,7 +13,7 @@ public class Eco extends Actor
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     GreenfootImage[] front = new GreenfootImage[3];
-    GreenfootImage[] back = new GreenfootImage[2];
+    GreenfootImage[] back = new GreenfootImage[3];
     GreenfootImage[] right = new GreenfootImage[3];
     GreenfootImage[] left = new GreenfootImage[3];
     GreenfootImage[] clean = new GreenfootImage[2];
@@ -57,6 +57,12 @@ public class Eco extends Actor
     GreenfootSound ecoSound = new GreenfootSound("garbage.mp3");
     public void act()
     {
+        if(getWorld() instanceof MyWorld)
+        {
+            if(getWorld() == null)return;
+            MyWorld world = (MyWorld)getWorld();
+            if(world.gameOver)return;
+        }
         // Add your action code here.
         moving = false;
         collect();

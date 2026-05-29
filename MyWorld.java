@@ -10,6 +10,7 @@ public class MyWorld extends World {
     public int score = 0;
     Label scoreLabel;
     int carTimer = 0;
+    public boolean gameOver = false;
     public MyWorld() {
         super(600, 400, 1, false);
         setBackground("road.jpg");
@@ -75,6 +76,7 @@ public class MyWorld extends World {
      */
     public void gameOver()
     {
+        gameOver = true;
         Label gameOverLabel = new Label("Game Over", 100);
         addObject(gameOverLabel, 300, 200);
     }

@@ -34,8 +34,17 @@ public class Cars extends Actor
     }
     public void act()
     {
+        if(getWorld() == null)return;
+        MyWorld world = (MyWorld)getWorld();
+        if(world.gameOver)return;
         // Add your action code here.
         setLocation(getX() + speed, getY());
+        //gameover
+        if(isTouching(Eco.class))
+        {
+            world.gameOver();
+        }
+        
         //so this is if the car runs of the screen we dont want it to keep running 
         if(getX() < 0)
         {

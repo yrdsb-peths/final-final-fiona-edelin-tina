@@ -103,5 +103,10 @@ public class TitleScreen extends World
         Trash trash5 = new Trash();
         addObject(trash5,446,280);
         trash5.setLocation(470,274);
+        label5.setLocation(89,308);
+        label4.setLocation(92,285);
+        label4.setLocation(149,279);
+        label5.setLocation(91,306);
+        label5.setLocation(79,304);
     }
 }

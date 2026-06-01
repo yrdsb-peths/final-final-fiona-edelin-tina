@@ -46,7 +46,7 @@ public class Cars extends Actor
         }
         
         //so this is if the car runs of the screen we dont want it to keep running 
-        if(getX() < 0)
+        if(getX() < -50 || getX() > getWorld().getWidth() + 50)
         {
             getWorld().removeObject(this);
         }

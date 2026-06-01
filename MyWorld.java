@@ -38,10 +38,12 @@ public class MyWorld extends World {
         {
             carTimer = 0;
             int amount = Greenfoot.getRandomNumber(3) + 1;
-            
+            //top lanes (right to left)
             int lane1 = 65;
             int lane2 = 135;
-            
+            //bottom lanes (left to right)
+            int lane3 = 265;
+            int lane4 = 335;
             if(amount == 1)
             {
                 return;

@@ -50,7 +50,7 @@ public class MyWorld extends World {
             }
             if(amount == 2)
             {
-                int lane = Greenfoot.getRandomNumber(2);
+                int lane = Greenfoot.getRandomNumber(4);
 
                 Cars car = new Cars(0);
 

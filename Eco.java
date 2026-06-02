@@ -68,25 +68,25 @@ public class Eco extends Actor
         collect();
         if(Greenfoot.isKeyDown("left") && !cleaning)
         {
-            move(-2);
+            move(-3);
             facing = "left";
             moving = true;
         }
         else if(Greenfoot.isKeyDown("right") && !cleaning)
         {
-            move(2);
+            move(3);
             facing = "right";
             moving = true;
         }
         if(Greenfoot.isKeyDown("up") && !cleaning)
         {
-            setLocation(getX(), getY() - 2);
+            setLocation(getX(), getY() - 3);
             facing = "back";
             moving = true;
         }
         if(Greenfoot.isKeyDown("down") && !cleaning)
         {
-            setLocation(getX(), getY() + 2);
+            setLocation(getX(), getY() + 3);
             facing = "front";
             moving = true;
         }

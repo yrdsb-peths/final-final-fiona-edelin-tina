@@ -57,19 +57,25 @@ public class MyWorld extends World {
                 if(lane == 0)
                 {
                     addObject(car, 650, lane1);
+                    addObject(car, 650, lane3);
                 }
                 else
                 {
                     addObject(car, 650, lane2);
+                    addObject(car, 650, lane4);
                 }
             }
             if(amount == 3)
             {
                 Cars car1 = new Cars(0);
                 Cars car2 = new Cars(0);
+                Cars car3 = new Cars(0);
+                Cars car4 = new Cars(0);
 
                 addObject(car1, 650, lane1);
                 addObject(car2, 650, lane2);
+                addObject(car3, 650, lane3);
+                addObject(car4, 650, lane4);
             }
         }
     }

@@ -27,7 +27,7 @@ public class Cars extends Actor
         for(int i = 0; i < carImage.length; i++)
         {
             carImage[i] = new GreenfootImage("car/car" + i + ".png");
-            carImage[i].scale(80,40);
+            carImage[i].scale(70,30);
         }
         int randomImage = Greenfoot.getRandomNumber(carImage.length);
         setImage(carImage[randomImage]);

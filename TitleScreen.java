@@ -108,5 +108,17 @@ public class TitleScreen extends World
         label4.setLocation(149,279);
         label5.setLocation(91,306);
         label5.setLocation(79,304);
+        Label label6 = new Label("Don't get hit!", 30);
+        addObject(label6,66,212);
+        label6.setLocation(180,208);
+        label.setLocation(180,157);
+        label.setLocation(152,151);
+        label.setLocation(170,153);
+        label2.setLocation(331,158);
+        label2.setLocation(406,153);
+        label6.setLocation(119,186);
+        label6.setLocation(126,187);
+        label6.setLocation(131,187);
+        label6.setLocation(129,187);
     }
 }

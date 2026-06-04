@@ -29,27 +29,27 @@ public class Eco extends Actor
         for(int i = 0; i < front.length; i++)
         {
             front[i] = new GreenfootImage("images/person/front" + i + ".png");
-            front[i].scale(50,80);
+            front[i].scale(35,65);
         }
         for(int i = 0; i < back.length; i++)
         {
             back[i] = new GreenfootImage("images/person/back" + i + ".png");
-            back[i].scale(50,80);
+            back[i].scale(35,65);
         }
         for(int i = 0; i < left.length; i++)
         {
             left[i] = new GreenfootImage("images/person/left" + i + ".png");
-            left[i].scale(80,80);
+            left[i].scale(65,65);
         }
         for(int i = 0; i < right.length; i++)
         {
             right[i] = new GreenfootImage("images/person/right" + i + ".png");
-            right[i].scale(80,80);
+            right[i].scale(65,65);
         }
         for(int i = 0; i < clean.length; i++)
         {
             clean[i] = new GreenfootImage("images/person/clean" + i + ".png");
-            clean[i].scale(50,80);
+            clean[i].scale(35,65);
         }
         setImage(front[0]);
         animationTimer.mark();

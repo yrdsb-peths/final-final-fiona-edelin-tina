@@ -24,6 +24,10 @@ public class Cars extends Actor
             // so the cars like move left yk
             speed = - speed;
         }
+        if(direction == 1)
+        {
+            getImage().mirrorHorizontally();
+        }
         for(int i = 0; i < carImage.length; i++)
         {
             carImage[i] = new GreenfootImage("car/car" + i + ".png");

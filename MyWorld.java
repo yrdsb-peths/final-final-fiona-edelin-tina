@@ -69,13 +69,14 @@ public class MyWorld extends World {
             {
                 Cars car1 = new Cars(0);
                 Cars car2 = new Cars(0);
-                Cars car3 = new Cars(0);
-                Cars car4 = new Cars(0);
+                Cars car3 = new Cars(1);
+                Cars car4 = new Cars(1);
 
                 addObject(car1, 650, lane1);
                 addObject(car2, 650, lane2);
-                addObject(car3, 650, lane3);
-                addObject(car4, 650, lane4);
+                
+                addObject(car3, -50, lane3);
+                addObject(car4, -50, lane4);
             }
         }
     }

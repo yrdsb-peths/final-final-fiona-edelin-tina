@@ -43,7 +43,7 @@ public class MyWorld extends World {
             int lane2 = 135;
             //bottom lanes (left to right)
             int lane3 = 265;
-            int lane4 = 335;
+            int lane4 = 315;
             if(amount == 1)
             {
                 return;

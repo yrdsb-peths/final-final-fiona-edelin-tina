@@ -11,6 +11,7 @@ public class MyWorld extends World {
     Label scoreLabel;
     int carTimer = 0;
     public boolean gameOver = false;
+    private GreenfootSound traffic = new GreenfootSound("traffic.mp3");
     public MyWorld() {
         super(600, 400, 1, false);
         setBackground("road.jpg");
@@ -24,6 +25,7 @@ public class MyWorld extends World {
         addObject(scoreLabel, 40, 50);
         
         createTrash();
+        traffic.playLoop();
     }
     
     public void act()

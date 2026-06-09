@@ -8,6 +8,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Cars extends Actor
 {
+    GreenfootSound crashSound = new GreenfootSound("crash.mp3");
     /**
      * Act - do whatever the Cars wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
@@ -47,6 +48,7 @@ public class Cars extends Actor
         if(isTouching(Eco.class))
         {
             world.gameOver();
+            crashSound.play();
         }
         
         //so this is if the car runs of the screen we dont want it to keep running 

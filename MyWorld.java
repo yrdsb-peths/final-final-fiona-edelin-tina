@@ -92,15 +92,45 @@ public class MyWorld extends World {
         addObject(gameOverLabel, 300, 200);
     }
     
-    /**
-     * Increase score
-     */
-    public void increaseScore()
+        /**
+         * Increase score
+         */
+        public void increaseScore()
     {
         score++;
         scoreLabel.setValue(score);
-    }
     
+        if(score == 5)
+        {
+            addObject(new Achievement("Achievement: Eco Beginner!"), 300, 30);
+        }
+    
+        if(score == 10)
+        {
+            addObject(new Achievement("Achievement: Trash Collector!"), 300, 30);
+        }
+    
+        if(score == 20)
+        {
+            addObject(new Achievement("Achievement: Clean-Up Hero!"), 300, 30);
+        }
+    
+        if(score == 40)
+        {
+            addObject(new Achievement("Achievement: Eco Warrior!"), 300, 30);
+        }
+    
+        if(score == 80)
+        {
+            addObject(new Achievement("Achievement: Planet Protector!"), 300, 30);
+        }
+    
+        if(score == 160)
+        {
+            addObject(new Achievement("Achievement: Legend of Recycling!"), 300, 30);
+        }
+    }
+        
     /**
      * Create trash at random locations at top and bottom of screen
      */
